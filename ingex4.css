@@ -7,7 +7,7 @@ body{
 
 body::before{
     content: "";
-    background-image: url("/HTML/Protfolio\ project/screen.png");
+    background-image: url("screen.png");
     background-size: cover;
     position: absolute;
     top: 0;
