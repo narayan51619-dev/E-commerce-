@@ -1,0 +1,22 @@
+body{
+    background-image: url("../istockphoto-1336523021-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:300px;
+}
+.div1{
+      display: flex;
+      justify-content: center;
+      
+      
+}
+#img{
+    height:500px ;
+      width: 800px;
+      position: fixed;
+      top:100px;
+      left: 400px;
+      border: 0px;
+      border-radius: 7px;
+}
+
