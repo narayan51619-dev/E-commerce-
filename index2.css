@@ -2,7 +2,7 @@ body{
     background-image: url("istockphoto-1336523021-612x612.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding:300px;
+    padding:200px;
 }
 .div1{
       display: flex;
