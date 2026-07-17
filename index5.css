@@ -1,0 +1,68 @@
+body{
+    display:grid;
+    position: relative;
+    justify-content: center;
+    top: 150px;
+}
+
+body::before{
+    content: "";
+    background-image: url("/HTML/Protfolio\ project/screen.png");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2000px;
+    height: 1000px;
+    opacity: 0.2;
+    z-index: -1;
+    position: fixed;
+}
+.div1{
+    display: grid;
+    justify-content: center;
+    border:0px;
+    background-color:black ;
+    height:500px;
+    width:330px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+}
+#I1{
+    border:1px white ;
+    color: white;
+
+}
+#I1:hover{
+    background-color: dimgrey;
+    width:300px;
+    font-size:35px ;
+}
+p{
+    font-size:35px ;
+    border: 1px white;
+    background-color: rgb(104, 204, 5);
+}
+#I2{
+  
+  border:1px white;
+  
+  background-color: blue;
+  color: white;
+  width:300px;
+  height: 32px;
+}
+#I2:hover{
+    font-size: 31px;
+    background-color: rgb(67, 67, 240);
+    width:305;
+    height:33px ;
+}
+.div1{
+    box-shadow: 20px 20px gray;
+}
+
+
+
+
