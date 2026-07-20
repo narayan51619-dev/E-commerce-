@@ -1,6 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
 #imag{
-    height: 100px;
-    width: 150px;
+    height: auto;
+    width: 100%;
 }
 .flex1{
     height: 60px;
@@ -17,6 +25,7 @@
     justify-content: center;
     gap:20px;
     z-index:1000;
+    flex-wrap:wrap;
 }
 #basket{
     height: 50px;
@@ -36,9 +45,9 @@
     100% { transform: translateX(0); }
 }
 #search{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 45px;
-    margin-right: 100px;
 }
 #del{
     width: auto;
@@ -80,15 +89,10 @@
     border-radius: 6px;
 }
 #veg1{
-    height: 550px;
-    width: 250px;
-    border: 1px rgb(248, 241, 212);
-    background-color: white;
-    border-radius: 8px;
-    margin: 5px;
-    padding: 20px;
-    transition: all;
-    transition-duration: 2s;
+    width: 100%;
+    max-width: 300px;
+    min-height: 550px;
+    margin: auto;
 }
 #tomato{
     display: grid;
@@ -174,7 +178,9 @@ s{
 }
 .veggies{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 15px;
+    padding: 10px;
 }
 .box{
     border: 0px;
@@ -182,15 +188,15 @@ s{
     border-radius: 6px;
 }
 #veg1:hover{
-    width: 300px;
-    height: 600px;
+    transform: scale(1.03);
 }
 .im{
-    width: 1500px;
-    height: 160px;
-    border: 1px;
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+    margin: auto;
     animation: float 3s ease-in-out infinite;
-    
 }
 @keyframes float {
     0% {
@@ -203,5 +209,79 @@ s{
 
     100% {
         transform: translateY(0px);
+    }
+}
+@media (max-width: 1024px){
+
+    .veggies{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #p2{
+        font-size: 40px;
+    }
+
+    .flex1{
+        gap:10px;
+    }
+}
+@media (max-width: 768px){
+
+    .flex1{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    #search{
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #cat{
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #p2{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .veggies{
+        grid-template-columns: 1fr;
+    }
+
+    #veg1{
+        max-width: 100%;
+    }
+
+    #imag{
+        width: 120px;
+        height: auto;
+    }
+
+    #basket{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width: 480px){
+
+    #p2{
+        font-size: 24px;
+    }
+
+    #t4{
+        font-size: 22px;
+    }
+
+    #t6{
+        font-size: 18px;
+    }
+
+    #cat{
+        font-size: 18px;
     }
 }
