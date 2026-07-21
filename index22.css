@@ -16,6 +16,7 @@
     top:2px;
     justify-content: center;
     gap:20px;
+    z-index:1000;
 }
 #basket{
     height: 50px;
