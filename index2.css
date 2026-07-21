@@ -19,4 +19,12 @@ body{
       border: 0px;
       border-radius: 7px;
 }
-
+@media only screen and (max-width:600px){
+    #img{
+        height: 300px;
+        width: 400px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+}
