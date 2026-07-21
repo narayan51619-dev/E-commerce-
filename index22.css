@@ -204,6 +204,141 @@ s{
         transform: translateY(0px);
     }
 }
+#li{
+    visibility: hidden;
+    display: none;
+}
+#ima{
+  visibility: hidden;
+    display: none;
+}
+.flex2{
+   height: 60px;
+    border: 1px cornsilk;
+    background-color: rgb(243, 243, 240);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top:2px;
+    justify-content: center;
+    gap:20px;
+    z-index: 1000;
+}
+.flex2{
+    visibility: hidden;
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .flex1{
+       visibility: hidden;
+       display: none;
+    }
+     #li{
+        width:50px;
+        height: 50px;
+        visibility: visible;
+        display:block;
+        color: blue;
+     }
+     .im{
+        display: none;
+        visibility: hidden;
+
+     }
+     #ima{
+       visibility: visible;
+        display:flex;
+        justify-content: center;
+        left: 30px;
+        height:250px;
+        width: 200px;
+    }
+    .veggies{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #veg1{
+    height: 500px;
+    width: 200px;
+    
+    }
+    #tomato{
+        height: 100px;
+    width: 100px;
+    }
+    #pi{
+        width:150px ;
+        height: 160px;
+    }
+    .flex2{
+    
+    display: none;
+   }
+    #veg1:hover{
+    width: 200px;
+    height: 500px;
+   }
+}
+
+
+@media only screen and (min-width:601px) and (max-width: 1277px){
+    .flex2{
+        visibility: visible;
+        display:flex;
+        
+
+    }
+    .flex1{
+        visibility: hidden;
+        display: none;
+    }
+    #li{
+        width:100px;
+        height: 50px;
+        visibility: visible;
+        display:block;
+        color: blue;
+        
+        
+     }
+    #basket{
+    height: 30px;
+    width: 30px; 
+    }
+    #search{
+    width: 150px;
+    height: 45px;
+    }
+    #log{
+        height: 40px;
+    width: 100px;
+    }
+    .veggies{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .im{
+        width:100% ;
+    }
+    #veg1:hover{
+    width: 300px;
+    height: 600px;
+   }
+}
+
+    
+
+    
+
+    
+
+    
+
+
 
 
 
