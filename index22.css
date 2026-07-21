@@ -330,7 +330,20 @@ s{
     height: 600px;
    }
 }
-
+.green-line{
+    height: 8px;
+    background-color: green;
+    width: 0;
+     animation: fillLine 1.5s forwards;
+}
+@keyframes fillLine{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
     
 
     
