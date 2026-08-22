@@ -17,6 +17,13 @@
     justify-content: center;
     gap:20px;
     z-index: 1000;
+     animation:darkness;
+    animation-duration: 5s;
+}
+@keyframes top-down{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
 }
 #basket{
     height: 50px;
@@ -48,7 +55,7 @@
     background-color: rgb(253, 224, 224);
     border-radius: 5px;
 }
-#log{
+#logi2{
     border: 1px;
     background-color: black;
     color: white;
@@ -72,7 +79,7 @@
     font-size: 50px;
     font-style:italic ;
 }
-#cat{
+#cat1{
     border: 0px;
     background-color: rgb(5, 136, 5);
     color: white;
@@ -186,26 +193,28 @@ s{
     height: 600px;
 }
 .im{
-    width: 1500px;
+    position:relative;
+    
+    width: 1060px;
     height: 160px;
     border: 1px;
-    animation: float 3s ease-in-out infinite;
-    position: relative;
-    left: 50px;
+    animation:drag; 
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes drag{
+    0%{right: -1000px;}
+    100%{right: 100px;}
     
 }
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
+#wellcome{
+    animation: dragin;
+    animation-duration: 10s;
+   animation-fill-mode: forwards;
+}
+@keyframes dragin{
+    0%{right:-1000px;}
+    100%{right:90px;}
 }
 #ig{
     width: 1500px;
@@ -359,5 +368,57 @@ s{
         width:100%;
     }
 }
+#shop{
+    animation-name:cross;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position:relative;
+}
+@keyframes cross{
+    0%{top:-1500px;}
+    100%{top:10;}
+}
+#login{
+   display: none;
+   animation-name: content;
+   animation-duration: 2s;
+   animation-fill-mode: forwards;
+   position: relative;
+}
+@keyframes content{
+    0%   {left:-1000px;}
+    100% {left:0;}
+}
+#wrong{
+    position: relative;
+    animation: topin;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes topin{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+b{  
+    display: grid;
+    justify-content: right;
+    font-size: 20px;
+    color: black;
+}
+button{ display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+}
+button:hover{
+    background-color: aliceblue;
+    width:205px ;
+    border-color: black;
+}   
+
     
 
