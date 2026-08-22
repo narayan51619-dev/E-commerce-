@@ -48,7 +48,7 @@
     background-color: rgb(253, 224, 224);
     border-radius: 5px;
 }
-#log{
+#logi{
     border: 1px;
     background-color: black;
     color: white;
@@ -358,6 +358,16 @@ s{
     #ig{
         width:100%;
     }
+}
+#shop{
+    animation-name:cross;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position:relative;
+}
+@keyframes cross{
+    0%{top:-1500px;}
+    100%{top:10;}
 }
     
 
