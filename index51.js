@@ -1,0 +1,157 @@
+let login= document.getElementById("logi1");
+let loginto=document.getElementById("login");
+let wrong=document.getElementById("wrong");
+
+login.onclick=function(){
+   wrong.innerHTML="❌";
+    wrong.style.position="relatuve";
+    wrong.style.left="290px";
+    wrong.style.top="0";
+    loginto.style.display="block";
+
+    loginto.innerHTML="";
+    loginto.innerHTML="";
+    loginto.innerHTML="";
+    loginto.innerHTML="";
+    loginto.innerHTML="";
+    loginto.innerHTML="";
+    loginto.innerHTML="";
+    
+    // loginto.style.display="grid";
+    loginto.style. border= "1px";
+    loginto.style.backgroundColor=" darkgrey";
+    loginto.style. color= "black";
+    loginto.style. width= "250px";
+    loginto.style. height="350px";
+    loginto.style. margin= "10px";
+    loginto.style.padding= "20px";
+    loginto.style.position="relative";
+    loginto.style.top="220px";
+    
+
+    let header=document.createElement("h1");
+    header.innerHTML="LogIn/Sign Up";
+    loginto.appendChild(header);
+    
+    let label1=document.createElement("label");
+    label1.innerHTML="Username:";
+    let input1=document.createElement("input");
+    input1.type="Email";
+    loginto.appendChild(label1);
+    loginto.appendChild(input1);
+    
+    let label2=document.createElement("label");
+    label2.innerHTML="Password:";
+    let input2=document.createElement("input");
+    input2.type="Password";
+    loginto.appendChild(label2);
+    loginto.appendChild(input2);
+
+    let p10=document.createElement("p");
+    p10.innerHTML="Forget Password!";
+    // label3.style.display="grid";
+    // label3.style.alignItems="right";
+    p10.style.color="black";
+    p10.style.position="relative";
+    p10.style.left="100px";
+    loginto.appendChild(p10);
+    
+    let p11=document.createElement("p");
+    p11.innerHTML="Create Account/Sign Up!";
+    loginto.appendChild(p11);
+    
+    
+    let button=document.createElement("button");
+    button.innerHTML="LogIn";
+    loginto.appendChild(button);
+
+}
+let shop=document.getElementById("shop1");
+let cat=document.getElementById("cat1");
+let link=document.createElement("a1");
+cat.onclick=function(){
+   
+    shop.innerHTML= "";
+    shop.innerHTML="";
+    shop.innerHTML="";
+    shop.innerHTML="";
+    shop.innerHTML="";
+    shop.innerHTML="";
+
+
+    let p=document.createElement("p");
+    p.innerHTML= "Search By Category ♡";
+
+    p.style.fontSize= "30px";
+    p.style.color= "white";
+    p.style.margin = "0";
+    p.style.fontSize="35px" ;
+    p.style.border="1px solid white";
+    p.style.backgroundColor= "rgb(104, 204, 5)";
+
+    shop.appendChild(p);
+    
+    let p1=document.createElement("p");
+    let l1=document.createElement("a");
+    l1.href="index51.html";
+    l1.innerHTML="Leafy Vegetables";
+    shop.appendChild(p1);
+    p1.appendChild(l1);
+    p1.style.border="1px white";
+    l1.style.color="white";
+    l1.style.fontSize="30px";
+    
+    let p2=document.createElement("p");
+    let l2=document.createElement("a");
+    l2.href="index52.html";
+    l2.innerHTML="Root Vegetables";
+    shop.appendChild(p2);
+    p2.appendChild(l2);
+    p2.style.border="1px white";
+    l2.style.color="white";
+    l2.style.fontSize="30px";
+    
+    let p3=document.createElement("p");
+    let l3=document.createElement("a");
+    l3.href="index53.html";
+    l3.innerHTML="Seasonal Vegetables";
+    shop.appendChild(p3);
+    p3.appendChild(l3);
+    p3.style.border="1px white";
+    l3.style.color="white";
+    l3.style.fontSize="30px";
+    
+    let p4=document.createElement("p");
+    let l4=document.createElement("a");
+    l4.href="index54.html";
+    l4.innerHTML="Exotic Vegetables";
+    shop.appendChild(p4);
+    p4.appendChild(l4);
+    p4.style.border="1px white";
+    l4.style.color="white";
+    l4.style.fontSize="30px";
+
+    let p5=document.createElement("p");
+    let l5=document.createElement("a");
+    l5.href="index22.html";
+    l5.innerHTML="Back";
+    shop.appendChild(p5);
+    p5.appendChild(l5);
+    p5.style.border="1px white";
+    l5.style.color="white";
+    l5.style.fontSize="30px";
+    
+    shop.style.display= "grid";
+    shop.style.animation = "none";
+    shop.offsetHeight;
+    shop.style.animation = "cross 2s";
+    shop.style.justifyContent= "center";
+    shop.style.alignContent = "center";
+    shop.style.border="1px";
+    shop.style.backgroundColor= "black" ;
+    shop.style.height= "500px";
+    shop.style.width= "400px";
+    shop.style.borderRadius= "10px";
+    shop.style.position="relative";
+    shop.style.top="200px";
+}
